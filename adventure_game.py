@@ -28,11 +28,11 @@ while True:
     if main_prompt.lower() == "q" or main_prompt.lower() == "quit":
         break
     else:
-        # User has chosen to play game and must now select a character:
+        # User has chosen to play game
         while True:
             # Loop for user to select a playable character from available options
             """
-            List of options for playable characters and function for initial game while loop wherein user able to select character info/traits for playable character in game-session
+            Options for character traits user can select from
             """
             playable = {
                 "mage": {
@@ -58,11 +58,11 @@ while True:
                 },
             }
 
-            """ Create empty completed_quests list. After enemy defeated by user in a given game session its name is added to completed_quests. List checked so user fights each enemy only once and to determine when user has won the game"""
+            """ 
+            Empty list where name of monster stored after user defeats it
+            list checked each loop to prevent player from fighting same monster twice
+            """
             completed_quests = []
-            # Create empty player-object to assign stats to after user selects:
-            # player = Player("", 0, 0, 0, 0)
-
             """
             User selects character and info displayed after selection: 
             """
